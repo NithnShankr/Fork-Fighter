@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="horizonos.permission.HEADSET_CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera2.any" android:required="true"/>
+
+</manifest>

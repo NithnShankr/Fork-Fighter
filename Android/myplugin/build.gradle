@@ -1,0 +1,47 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.example.myplugin'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 29
+        targetSdk 34
+
+        // Quest supports only arm64-v8a
+        ndk {
+            abiFilters 'arm64-v8a'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    sourceSets {
+        test.java.srcDirs = []
+        androidTest.java.srcDirs = []
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // ONNX Runtime for Android (auto includes JNI)
+    implementation 'com.microsoft.onnxruntime:onnxruntime-android:1.18.0'
+
+    // Optional extensions - only enable if needed
+    // implementation 'com.microsoft.onnxruntime:onnxruntime-extensions-android:1.18.0'
+}
