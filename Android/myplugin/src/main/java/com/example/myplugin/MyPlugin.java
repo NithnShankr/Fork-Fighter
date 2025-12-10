@@ -78,8 +78,8 @@ public class MyPlugin {
 
     private static boolean modelReady = false;
 
-    private static final String FORK_MODEL  = "fork_yolo11n_sam4_r320_aug.onnx";
-    private static final String PLATE_MODEL = "plate_yolo11n_sam3344_r320_aug_v2.onnx";
+    private static final String FORK_MODEL  = "fork_yolo11n_custom.onnx";
+    private static final String PLATE_MODEL = "plate_yolo11n.onnx";
 
     // Used for FPS measurement
     private static long lastInferenceTime = System.currentTimeMillis();

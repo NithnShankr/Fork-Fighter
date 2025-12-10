@@ -7,6 +7,26 @@ Fork Fighter transforms an ordinary plate and a real fork into a mixed-reality b
 This repository contains the full open-source project—including the tracking system, mixed-reality gameplay logic, and supporting tools—so developers can explore, learn, and extend the experience.
 
 ---
+## 🗂️ Project Structure  
+```text
+/Fork-Fighter
+    /Android
+        📦 JNI.aar
+        /myplugin/src/main
+            /assets
+                🧠 fork_yolo11n_custom.onnx
+                🧠 plate_yolo11n.onnx
+            /java/com/example/myplugin
+                📄 MyPlugin.java
+
+    /Unity
+        /Assets/Scripts
+            📄 QuestCameraBridge.cs
+
+    📓 YOLO11n Training Notebook for Meta Quest3.ipynb
+```
+
+
 
 ## 🎮 Gameplay Summary  
 **1. Plate Detected → Experience Begins**  
