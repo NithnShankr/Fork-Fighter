@@ -286,7 +286,9 @@ PrefabInstance:
       value: 'Place a plate in front of you to get started.
 
         For the best
-        experience, use a white plate.'
+        experience, use a white plate.
+
+        v9.13'
       objectReference: {fileID: 0}
     - target: {fileID: 2859147190401906338, guid: b16424dcc3deba241b1457370a8e5b5e, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
